@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- 
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Flexbox Exercise</title>
-  <!-- ADD CSS LINK HERE -->
-  <link rel="stylesheet" href="style2.css">
-  <script src="signuppage1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Flexbox Exercise</title>
+    <!-- ADD CSS LINK HERE -->
+    <link rel="stylesheet" href="style2.css">
+    <script src="signuppage1.js"></script>
 
+    <!-- ADD RESPONSIVE STUFF HERE -->
 
-  <!-- ADD RESPONSIVE STUFF HERE -->
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
 
 </head>
 <header>
@@ -24,208 +23,143 @@
             <li class="active">Select plan</li>
             <li class="delivery">Delivery details </li>
             <li class="payment">Payment</li>
-    
+
         </ul>
-     
 
     </div>
-
 
 </header>
 
 <body>
-   
-
-  
 
     <img class="logo" src="vegetables.png">
 
     <a href="index.html">
-        <img src="back-arrow.png" id="arrow" width="48" height="48" >
-      </a>
-      
+        <img src="back-arrow.png" id="arrow" width="48" height="48">
+    </a>
 
+    <main>
 
-     
-    
-
-<main>
-
-    <section class="optioncontainer">
-            <div id="two-person"data-tilt data-tilt>
+        <section class="optioncontainer">
+            <div id="two-person" data-tilt data-tilt>
                 <h1>2 Person</h1>
-                    <img id="two-person-img" src="2-person.jpg">
+                <img id="two-person-img" src="2-person.jpg">
 
-                    <form action="/action_page.php">
-                        <h2>Meals per week</h2>
-                        <p>Mon Tue Wed Thu</p>
-                        <label class="container">
-                            <input type="radio" checked="checked" name="radio" value="$10.95" onclick="calculate(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            <label class="container">
-                            <input type="radio" name="radio" value="$18.95" onclick="calculate(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            <label class="container">
-                            <input type="radio" name="radio" value="$28.65" onclick="calculate(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            <label class="container">
-                            <input type="radio" name="radio"value="$35.40" onclick="calculate(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            
-                            
+                <form action="/action_page.php">
+                    <h2>Meals per week</h2>
+                    <p>Mon Tue Wed Thu</p>
+                    <label class="container">
+                        <input type="radio" checked="checked" name="radio" value="$10.95" onclick="calculate(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$18.95" onclick="calculate(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$28.65" onclick="calculate(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$35.40" onclick="calculate(this);">
+                        <span class="checkmark"></span>
+                    </label>
 
+                    <table id="t01">
+                        <td>Price =</td>
+                        <td>
+                            <output type="number" name="price" id="output"></output>
+                        </td>
+                        </tr>
+                    </table>
 
-                          <table id="t01">
-                              <td>Price =</td>
-                              <td>
-                                <output type="number" name="price" id="output"></output>
-                              </td>
-                            </tr>
-                          </table>
-    
+                    <a href="signuppage2.html" class="button">Select</a>
 
-                        
-                        
-                          <a href="signuppage2.html" class="button">Select</a>
-                        
-
-
-
-
-                          
-                        </form>
-
-
-
-                        
-            </div>
-
-            <div id="optionbox2"data-tilt data-tilt>
-                    <h1>4 Person</h1>
-
-                    <img id="two-person-img" src="family.jpg">
-                    <form action="/action_page.php">
-                      <h2>Meals per week</h2>
-                      <p>Mon Tue Wed Thu</p>
-                      <label class="container">
-                          <input type="radio" checked="checked" name="radio" value="$10.95" onclick="calculate2(this);">
-                          <span class="checkmark"></span>
-                          </label>
-                          <label class="container">
-                          <input type="radio" name="radio" value="$18.95" onclick="calculate2(this);">
-                          <span class="checkmark"></span>
-                          </label>
-                          <label class="container">
-                          <input type="radio" name="radio" value="$28.65" onclick="calculate2(this);">
-                          <span class="checkmark"></span>
-                          </label>
-                          <label class="container">
-                          <input type="radio" name="radio"value="$35.40" onclick="calculate2(this);">
-                          <span class="checkmark"></span>
-                          </label>
-
-
-
-
-                        <table id="t01">
-                            <td>Price =</td>
-                            <td>
-                              <output type="number" name="price" id="output2"></output>
-                            </td>
-                          </tr>
-                        </table>
-
-
-
-
-                        <a href="signuppage2.html" class="button">Select</a>
-
-
-
-
-                          
-                        </form>
-
-                  
-                        
-
+                </form>
 
             </div>
-            
+
+            <div id="optionbox2" data-tilt data-tilt>
+                <h1>4 Person</h1>
+
+                <img id="two-person-img" src="family.jpg">
+                <form action="/action_page.php">
+                    <h2>Meals per week</h2>
+                    <p>Mon Tue Wed Thu</p>
+                    <label class="container">
+                        <input type="radio" checked="checked" name="radio" value="$10.95" onclick="calculate2(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$18.95" onclick="calculate2(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$28.65" onclick="calculate2(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$35.40" onclick="calculate2(this);">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <table id="t01">
+                        <td>Price =</td>
+                        <td>
+                            <output type="number" name="price" id="output2"></output>
+                        </td>
+                        </tr>
+                    </table>
+
+                    <a href="signuppage2.html" class="button">Select</a>
+
+                </form>
+
+            </div>
+
             <div id="optionbox3" data-tilt data-tilt>
-                    <h1>Vegetarain</h1>
+                <h1>Vegetarain</h1>
 
-                    <img id="two-person-img" src="vegetarain.jpg">
+                <img id="two-person-img" src="vegetarain.jpg">
 
-                    <form action="/action_page.php">
-                        <h2>Meals per week</h2>
-                        <p>Mon Tue Wed Thu</p>
-                        <label class="container">
-                            <input type="radio" checked="checked" name="radio" value="$10.95" onclick="calculate3(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            <label class="container">
-                            <input type="radio" name="radio" value="$18.95" onclick="calculate3(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            <label class="container">
-                            <input type="radio" name="radio" value="$28.65" onclick="calculate3(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            <label class="container">
-                            <input type="radio" name="radio"value="$35.40" onclick="calculate3(this);">
-                            <span class="checkmark"></span>
-                            </label>
-                            
-                            
+                <form action="/action_page.php">
+                    <h2>Meals per week</h2>
+                    <p>Mon Tue Wed Thu</p>
+                    <label class="container">
+                        <input type="radio" checked="checked" name="radio" value="$10.95" onclick="calculate3(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$18.95" onclick="calculate3(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$28.65" onclick="calculate3(this);">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" value="$35.40" onclick="calculate3(this);">
+                        <span class="checkmark"></span>
+                    </label>
 
-                          <table id="t01">
-                              <td>Price =</td>
-                              <td>
-                                <output type="number" name="price" id="output3"></output>
-                              </td>
-                            </tr>
-                          </table>
-    
+                    <table id="t01">
+                        <td>Price =</td>
+                        <td>
+                            <output type="number" name="price" id="output3"></output>
+                        </td>
+                        </tr>
+                    </table>
 
-                          
-                        <a href="signuppage2.html" class="button">Select</a>
-
-
-
-
+                    <a href="signuppage2.html" class="button">Select</a>
 
             </div>
 
-            
+        </section>
 
+    </main>
 
-         
-            
-             
-
-
-
-
-
-
-    </section>
-
-
-
-
-
-
-</main>
-    
-
-
-<script type="text/javascript" src="vanilla-tilt.js"></script>
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
 
 </body>
+
 </html>

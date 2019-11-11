@@ -1,6 +1,7 @@
 
 html,
 
+/* progress bar*/
 
 .progcontainer {
   width: 100%;
@@ -11,6 +12,8 @@ html,
   display: flex;
   justify-content: center;
 }
+/* progress bar not active*/
+
 .progressbar li {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
@@ -58,6 +61,8 @@ html,
     font-size: 20px;
   content: none;
 }
+/* Page currently and past*/
+
 .progressbar li.active {
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -102,6 +107,7 @@ h1 {
 h2{
 color: black;
 }
+/* Back arrow*/
 
 #arrow{
     width: 4%;
@@ -207,14 +213,14 @@ position: relative;
       background-color: #2196F3;
     }
     
-    /* Create the indicator (the dot/circle - hidden when not checked) */
+    /* Create the indicator  */
     .checkmark:after {
       content: "";
       position: absolute;
       display: none;
     }
     
-    /* Show the indicator (dot/circle) when checked */
+    /* Show the indicator when checked */
     .container input:checked ~ .checkmark:after {
       display: block;
     }
@@ -245,6 +251,7 @@ padding:1%;
 
 
 }
+    /* style for card name  */
 
 input[type=text] {
 
@@ -262,21 +269,26 @@ input[type=text] {
     }
 
 }
+/* style for expirary date */
 
-    input[type=month] {
-
-
-        margin:2%;
-        width:10%;
-        height:7%;
-        }
-        input[type=number] {
+input[type=month] {
 
 
-            margin:2%;
-            width:15%;
-            height:7%;
-            }
+margin:2%;
+width:10%;
+height:7%;
+
+}
+/* style for cvc  */
+
+input[type=number] {
+
+
+     margin:2%;
+     width:15%;
+    height:7%;
+
+}
 .card-info{
 
 background:white;
@@ -294,6 +306,13 @@ color: black;
 padding:2%;
 
 }
+#promo{
+
+border-style: solid;
+
+}
+    /* terms and contions text */
+
 .checkbox-directions {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
@@ -338,7 +357,7 @@ ADD MEDIA QUERIES BELOW
 --------------------- */
 
 
-    @media (max-width: 800px) {
+@media (max-width: 800px) {
         .row {
           flex-direction: column-reverse;
         }

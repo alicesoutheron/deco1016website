@@ -1,168 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- 
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Flexbox Exercise</title>
-  <!-- ADD CSS LINK HERE -->
-  <link rel="stylesheet" href="style4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Flexbox Exercise</title>
+    <!--  CSS LINK HERE -->
+    <link rel="stylesheet" href="style4.css">
 
-  <!-- ADD RESPONSIVE STUFF HERE -->
+    <!--  RESPONSIVE STUFF HERE -->
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
 
 </head>
 <header>
+        <!--Progress bar -->
+
     <div class="progcontainer">
         <ul class="progressbar">
             <li class="active">Select plan</li>
             <li class="active">Delivery details </li>
             <li class="active">Payment</li>
-    
+
         </ul>
-     
 
     </div>
-    
-
 
 </header>
+
 <body>
 
+    <img class="logo" src="vegetables.png">
+    <!--  Back arrow -->
 
-           <img class="logo" src="vegetables.png">
+    <a href="signuppage1.html">
+        <img src="back-arrow.png" id="arrow" width="48" height="48">
+    </a>
 
-
-  
-           <a href="signuppage1.html">
-                <img src="back-arrow.png" id="arrow" width="48" height="48" >
-              </a>
-              
-        
-            
-
-       
-      
-        <main>
-      <div class="credit">
+    <main>
+        <div class="credit">
             <div class="cred-heading">
-                    <h1>Credit or Debit</h1>
-                    <h1>Paypal</h1>
+                <h1>Credit or Debit</h1>
+                <h1>Paypal</h1>
             </div>
-        
-        <div class="radiocontainer"> 
-           
-    
 
-        <label class="container">
-          <input type="radio" checked="checked" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-     
-      </div>
-      </div>
-    
-        </main>
+            <div class="radiocontainer">
 
-        <section >
-           
-          <form>
-           
-            
-            
-                <h2>Card Information</h2>
-                
-              
-                 
-                <div class="form-group">
-                      Name on card:<br>
-                        <input type="text" name="cardname" placeholder="Jane Smith">
-                        <br>
-                </div>
+                <label class="container">
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
 
-                  
-                <div class="form-group">
-                        Card number:<br>
-                          <input type="number" id="card-number" name="cardname" value="Jane Smith">
-                    
-                          Exp:
-                          <input type="month" name="cardname" value="Jane Smith">
-                        
-                          CVC:
-                          <input type="number" name="points" min="100" max="999" step="1" value="000">
+            </div>
+        </div>
 
-                </div>
-          </form>    
-       
+    </main>
 
+    <section>
+
+        <form>
+
+            <h2>Card Information</h2>
+
+            <div class="form-group">
+                Name on card:
+                <br>
+                <input type="text" name="cardname" placeholder="Jane Smith">
+                <br>
+            </div>
+
+            <div class="form-group">
+                Card number:
+                <br>
+                <input type="number" id="card-number" name="cardname" value="Jane Smith"> Exp:
+                <input type="month" name="cardname" value="Jane Smith"> CVC:
+                <input type="number" name="points" min="100" max="999" step="1" value="000">
+
+            </div>
+        </form>
 
         </div>
 
+    </section>
+    <div class="bottompage">
 
+        <div class="checkbox-directions">
 
-      
-        </section>
-        <div class="bottompage">
-              
-        
-                <div class="checkbox-directions">
-        
-                  <input type="checkbox" id="front" name="front"
-                        checked>
-                  <label for="front">I accept the terms and conditions and have read the privacy policy.
+            <input type="checkbox" id="front" name="front" checked>
+            <label for="front">I accept the terms and conditions and have read the privacy policy.
 
                 <br>
                 <i>This field is required.</i>
-                  </label>
-                </div>
-                
-                <div class="form-group">
-                        Promo code:<br>
-                          <input type="text" name="promocode" >
-                          <br>
-                  </div>
-        
-                  <div class="bottom-nav">
-                        <div class="button-container">
-                            <button type="submit" id="buttonsummary" ><h2>Place payment</h2></button>
-                       </div>
-        
-                      
-        
-                </div>
-        
-
-            
-       
-          
+            </label>
         </div>
 
-        
-          
+        <div class="form-group">
+            Promo code:
+            <br>
+            <input type="text" id="promo" name="promocode">
+            <br>
+        </div>
 
+        <div class="bottom-nav">
+            <div class="button-container">
+                <button type="submit" id="buttonsummary">
+                    <h2>Place payment</h2></button>
+            </div>
 
+        </div>
 
+    </div>
 
-      
-        <!-- ADD THE TILT JS LIBRARY HERE -->
-        <div class="your-element" data-tilt></div>
-      
-      
-        <!-- ADD THE VALIDATE JS LIBRARY HERE -->
-      
-      
-        <!-- ADD THE SCRIPT.JS FILE HERE -->
-        <script type="text/javascript" src="validate.min.js"></script>
-      
-        <script type="text/javascript" src="vanilla-tilt.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-      
-      </body>
+    <!--  THE TILT JS LIBRARY HERE -->
+    <div class="your-element" data-tilt></div>
+
+    <!--  THE VALIDATE JS LIBRARY HERE -->
+
+    <!--  THE SCRIPT.JS FILE HERE -->
+    <script type="text/javascript" src="validate.min.js"></script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
 </html>
