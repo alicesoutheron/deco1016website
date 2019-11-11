@@ -354,7 +354,6 @@ font-size: 210%;
 ADD MEDIA QUERIES BELOW
 --------------------- */
 
-
 @media (max-width: 800px) {
         .row {
           flex-direction: column-reverse;

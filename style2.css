@@ -254,7 +254,6 @@ h1 {
   display: none;
 }
 
-
 /* Show the indicator (dot/circle) when checked */
 
 .container input:checked ~ .checkmark:after {
