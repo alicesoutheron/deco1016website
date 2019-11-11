@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Flexbox Exercise</title>
+  <!-- ADD CSS LINK HERE -->
+  <link rel="stylesheet" href="style3.css">
+
+
+  <!-- ADD RESPONSIVE STUFF HERE -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <div class="progcontainer">
+        <ul class="progressbar">
+            <li class="active">Select plan</li>
+            <li class="active">Delivery details </li>
+            <li class="plans">Payment</li>
+    
+        </ul>
+     
+
+    </div>
+    
+
+
+</header>
+<body>
+  
+    <img class="logo" src="vegetables.png">
+   
+    <a href="signuppage1.html">
+        <img src="back-arrow.png" id="arrow" width="48" height="48" >
+      </a>
+      
+
+    
+
+       
+      
+        <main>
+      
+          <form>
+            <h2>Delivery Information</h2>
+            
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="First name">
+              <input type="text" id="last name" name="last name" placeholder="Last name">
+              <div class="messages"></div>
+              <div class="messages"></div>
+            </div>
+             
+            <div class="form-group">
+                    <input type="text" id="username" address="address" placeholder="Address 1">
+                    <input type="text" id="username" address="address" placeholder="Address 2 ">
+                    <div class="messages"></div>
+
+                    
+                  </div>
+        
+          
+            
+            <div class="form-group">
+                <input type="text" id="city" name="City" placeholder="City">
+              <input type="number" id="postcode" name="postcode" placeholder="Postcode">
+              <label for="password"></label>
+            
+              <div class="states-container">
+              <select id="states" name="cars">
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="ACT">ACT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="VIC">VIC</option>
+
+                  </select>
+
+                </div>
+
+              <div class="messages"></div>
+            </div>
+            <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Enter your email here">
+              <input type="tel" id="phone-number" name="phone-number" placeholder=" Phone number ">
+                    <div class="messages"></div>
+                  </div>
+      
+         
+          </form>
+      
+        
+      
+        </main>
+
+        <section >
+        
+            <div class="radiocontainer"> 
+                <h1>Delivery day</h1>
+
+            <div class="days-text">
+              <p id="Mon">Mon</p>
+              <p id="Tue">Tue</p>
+              <p id="Wed">Wed</p>
+              <p id="Thur">Thu</p>
+
+            </div>
+
+            <label class="container">
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            
+        </div>
+        <div id="time-dropdown">
+          <h2>Time of delivery</h2>
+        <select class="select-css">
+                <option>Select delivery time</option>
+                <option>7am-9am</option>
+                <option>10am-12pm</option>
+                <option>1pm-3pm</option>
+                <option>4pm-6pm</option>
+            </select>
+        </div>
+
+      </div>
+      <div id="time-dropdown">
+        <h2>First order date</h2>
+      <input type="date" class="select-css">
+            
+          </select>
+      </div>
+
+
+    <div class="checkboxs">
+        <h2>Delivery instructions:</h2>
+
+        <div class="checkbox-directions">
+
+          <input type="checkbox" id="front" name="front"
+                checked>
+          <label for="front">Leave at front door</label>
+        </div>
+      
+
+
+
+        <div class="checkbox-directions">
+            <input type="checkbox" id="back" name="back">
+          <label for="back">Leave at back door</label>
+        </div>
+
+        <div class="checkbox-directions">
+            <input type="checkbox" id="dry" name="drry">
+            <label for="dry">Leave in dry area</label>
+          </div>
+
+          <div class="checkbox-directions">
+              <input type="checkbox" id="home" name="home">
+              <label for="home">Someone will be home to collect</label>
+            </div>
+            
+
+          <div class="checkbox-directions">
+                
+                <input type="text" id="specifc" name="specifc"
+               placeholder="Other specfic delivery instructions">
+              </div>
+              
+
+        </div>
+
+
+
+      
+        </section>
+        
+        <div class="sidenav">
+
+
+          <div id="summary-text">
+          <h2>Order Summary</h2>
+          <p>3 meals </p>
+
+          <p>Delivery </p>
+
+          <p>Cooler bag </p>
+
+
+          
+          </div>
+          <div id="total">
+              <h2>Total</h2>
+
+          </div>
+          <div class="form-group">
+          
+          <div class="bottom-nav">
+              <div class="button-container">
+                  <a href="paymentpage.html" class="button">Proceed to payment</a>
+
+             </div>
+            </div>
+              <img id="summary-pic" src="summary-pic.jpg">
+
+           
+              </div>
+       
+          
+        </div>
+
+        
+          
+
+      </section>
+
+
+
+      
+        <!-- ADD THE TILT JS LIBRARY HERE -->
+        <div class="your-element" data-tilt></div>
+      
+      
+        <!-- ADD THE VALIDATE JS LIBRARY HERE -->
+      
+      
+        <!-- ADD THE SCRIPT.JS FILE HERE -->
+        <script type="text/javascript" src="validate.min.js"></script>
+      
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript" src="signupage2.js"></script>
+      
+      </body>
+</html>

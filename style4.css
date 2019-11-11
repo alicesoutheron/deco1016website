@@ -1,0 +1,347 @@
+
+html,
+
+
+.progcontainer {
+  width: 100%;
+  
+}
+.progressbar {
+  counter-reset: step;
+  display: flex;
+  justify-content: center;
+}
+.progressbar li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  color: #7d7d7d;
+}
+.progressbar li:before {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  width: 150px;
+  height: 30px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 30px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 49%;
+  background-color: white;
+}
+.progressbar li:after {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  content: none;
+}
+.progressbar li.active {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.progressbar li.active:before {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  border-color: #f2a0a4;
+  background-color: #f2a0a4;
+}
+.progressbar li.active + li:after {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  background-color: #f2a0a4;
+}
+
+ 
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  background: white;
+  color: #fff;
+  
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  
+}
+
+h2{
+color: black;
+}
+
+#arrow{
+    width: 4%;
+    position: relative;
+    left: 9%;
+    top: 7%;
+
+}
+.logo{
+    width: 50px;
+    position: absolute;
+    /* right: 15%; */
+    left: 10%;
+    top: 1%;
+}
+
+
+
+main {
+  
+  background: #8EC96B;
+  width: 80%;
+  max-width: 1200px;
+position: relative;
+ margin:0 auto;
+
+  padding: 2em;
+ 
+}
+
+.cred-heading{
+
+    width:80%;
+    height:90%;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    
+}
+
+.cred-heading > h1{
+    color: white;
+    padding-right: 29%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    }
+
+
+    
+    .radiocontainer {
+        display:flex;
+        align-content: flex-start;
+        color: black;
+        padding-bottom:2%;
+        }
+    .radiocontainer > p{
+      display:flex;
+      justify-content: flex-start;
+      color: black;
+      padding:1%;
+      }
+    
+    .container {
+      display: inline-block;
+      padding-right:42%;
+      position: relative;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+    
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    /* Hide the browser's default radio button */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 50px;
+      background-color: #eee;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    /* Show the indicator (dot/circle) when checked */
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+    
+    /* Style the indicator (dot/circle) */
+    .container .checkmark:after {
+         top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+    }
+      
+
+section{
+    background: #f5f6f7;
+    width: 62.5%;
+    margin:0 auto;
+    height:100%;
+    padding: 2em;
+    height:368px;
+   
+}
+
+input{
+padding:1%;
+
+
+}
+
+input[type=text] {
+
+
+    margin:2%;
+    width:40%;
+    height:7%;
+    }
+
+#card-number{
+
+    margin:2%;
+    width:40%;
+    height:7%;
+    }
+
+}
+
+    input[type=month] {
+
+
+        margin:2%;
+        width:10%;
+        height:7%;
+        }
+        input[type=number] {
+
+
+            margin:2%;
+            width:15%;
+            height:7%;
+            }
+.card-info{
+
+background:white;
+
+}
+form{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
+color: black;
+}
+.form-group{
+
+padding:2%;
+
+}
+.checkbox-directions {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size:150%;
+
+    }
+
+.bottompage > .form-group{
+padding:4%;
+padding-left:0%;
+
+
+}
+
+.bottompage{
+
+    color:black;
+    width: 62.5%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2em;
+    height: 368px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+    
+   #buttonsummary{
+   width:40%;
+  padding:0px;
+  background-color: #f2a0a4;
+   
+  }
+
+  #buttonsummary > h2{
+color: white;
+font-size: 210%;
+  }
+
+/* ---------------------
+ADD MEDIA QUERIES BELOW
+--------------------- */
+
+
+    @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }

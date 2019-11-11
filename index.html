@@ -4,6 +4,7 @@
  
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Flexbox Exercise</title>
   <!-- ADD CSS LINK HERE -->
   <link rel="stylesheet" href="style.css">
@@ -11,35 +12,75 @@
 
   <!-- ADD RESPONSIVE STUFF HERE -->
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
+  
+
 </head>
 <body>
 
-<div class="header">
-  <h1>Header</h1>
-</div>
 
-<nav class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+<nav> 
+  <ul>
+      <img class="logo" src="vegetables.png">
+
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#Our plans">Our plans</a></li>
+      <li><a href="#How it works">How it works</a></li>
+      <li><a href="#Contact us">Contact us</a></li>
+        <div class="button-container">
+            <a href="signuppage1.html" class="button">Sign up</a>
+          </div>
+  </ul>
 </nav>
 
-<div class="img">
+
+<section class="banner">
+  
+  <div class="img">
     <img src="webpage_banner.png" alt="Trulli" width=100%>
       </div>
-
-    <div class="img">
-    <button type="button" onclick="alert('Hello world!')">Join now!</button>
-  </div>
-
-  <div class="relative">This div element has position: relative;
-      <img src="salad.png" alt="Trulli" width=10%> 
-
-      <div class="absolute">This div element has position: absolute;</div>
+  
+  <div class="button-container2">
+      <a href="signuppage1.html" class="button">Get started</a>
     </div>
+      
+
+</section>
 
 
 
+<section class="bottompage">
+
+  <section class="image-and-text">
+    <div class="image"><img id="saladbowl" src="salad.png"></div>
+    <div class="text">
+        <h1 id="healthy-and-fresh">Healthy and fresh</h1>
+      
+        <div class = "para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam, quis nostrud<br>exercitation ullamco laboris nisi ut aliquip ex ea commodo<br>consequat. Duis aute irure dolor in reprehenderit in voluptate<br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<br>occaecat cupidatat non proident, sunt in culpa qui officia<br> deserunt mollit anim id est laborum.;</div>  
+    </div>
+  </section>
+
+
+  <section class="image-and-text">
+      <div class="image"><h1 id="simple-delivery">Simple delivery</h1>
+        
+        <div class = "para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam, quis nostrud<br>exercitation ullamco laboris nisi ut aliquip ex ea commodo<br>consequat. Duis aute irure dolor in reprehenderit in voluptate<br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<br>occaecat cupidatat non proident, sunt in culpa qui officia<br> deserunt mollit anim id est laborum.;</div>  
+      </div>
+      <div class="text">
+          <img id="delivery-truck" src="delivery-truck.png">
+      </div>
+         
+  </section>
+
+</section>
+
+
+
+<div class="footer">
+  <div class="button-container3">
+      <a href="signuppage2.html" class="button"> Sign up now </a>
+    </div>
+</div>
 <main>
 
 
